@@ -19,22 +19,27 @@
 # 输入: [1,3,5,6], 0
 # 输出: 0
 
-class Solution(object):
-    def searchInsert(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: int
-        """
-        index = 0
-        len_ = len(nums)
-        if not nums:
-            return index
-        for i in range(len_):
-            if nums[i] >= target:
-                return i
-        return len_
+# class Solution(object):
+#     def searchInsert(self, nums, target):
+#         """
+#         :type nums: List[int]
+#         :type target: int
+#         :rtype: int
+#         """
+#         index = 0
+#         len_ = len(nums)
+#         if not nums:
+#             return index
+#         for i in range(len_):
+#             if nums[i] >= target:
+#                 return i
+#         return len_
+#
+# s = Solution()
+# a = s.searchInsert(nums=[1,3,5,6],target=5)
+# print(a)
+import string
 
-s = Solution()
-a = s.searchInsert(nums=[1,3,5,6],target=5)
+k = [1,2,3]
+v = ['a','b','c']
 print(a)
